@@ -111,11 +111,12 @@ p {
 }
 
 .logo {
-  max-height: 40px;
+  max-height: 150px;
 }
 
 nav {
-  padding: 20px 0;
+  padding: 10px 20px;
+  width: 100%;
 }
 
 nav ul {
