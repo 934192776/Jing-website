@@ -79,6 +79,14 @@ button {
   cursor: pointer;
 }
 
+.btn btn-branding {
+    background-color:red;
+}
+
+.btn btn-branding-outline {
+  
+}
+
 footer {
   text-align: center;
   padding: 1rem;
