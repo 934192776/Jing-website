@@ -1,13 +1,13 @@
 :root {
-  --branding-color: #ff638a ;
-  --secondary-color: #f8f5fb;
+  --branding-color: #db7ff9;
+  --secondary-color: #f696bc;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 
 }
 
 body {
-  background-color: #edc5f8;
+  background-color: #fae7f8;
   font-family: var(--default-font-family);
 }
 
@@ -30,7 +30,7 @@ h1 {
 
 h2 {
   font-size: 26px;
-  color:rgb(245, 92, 108);
+  color:#8A2BE2;
 }
 
 h3 {
@@ -43,16 +43,64 @@ p {
   line-height: 30px;
 }
 
-.hero {
-  background: var(--secondary-color);
-  padding: 60px 20px;
+.profile {
+  display: flex;
+  align-items:center;
+  gap:20px;
+  max-width:1100px;
+  margin: 40px auto;
 }
 
-.hero h2 {
+.hero {
+  background: var(--secondary-color);
+  padding: 4px;;
+  flex:3;
+  border-radius: 20px; 
+}
+
+.hero-info {
+  flex:1; 
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.hero-info h2 {
   font-family: var(--heading-font-family);
   font-weight: normal;
-  line-height: 0.5;
-  font-size: 20px;
+  line-height: 1.4;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.resume-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  flex:1;
+}
+
+.resume-card p {
+  font-family: Arial;
+  margin-bottom:10px;
+}
+
+.resume-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 24px;
+  }
+
+.btn-resume {
+  color: #f696bc;
+  transition: background 0.3s ease;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
 }
 
 .content-container {
@@ -123,6 +171,19 @@ nav a {
 nav a:hover,
 nav li.active a {
   color: var(--branding-color);
+}
+
+.btn {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  display:inline-block;
+}
+
+.btn-branding {
+  background-color: var(--secondary-color);
+  color:white;
 }
 
 footer {
