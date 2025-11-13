@@ -43,26 +43,32 @@ p {
   line-height: 30px;
 }
 
+.profile-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
 .profile {
   display: flex;
   align-items:center;
   gap:20px;
-  max-width:1100px;
-  margin: 40px auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .hero {
-  background: var(--secondary-color);
-  padding: 4px;;
+  background: transparent;
+  padding: 10px;
   flex:3;
-  border-radius: 20px; 
 }
 
 .hero-info {
   flex:1; 
-  max-width: 1000px;
-  margin: auto;
-  padding: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0;
+  background: transparent;
 }
 
 .hero-info h2 {
@@ -70,15 +76,43 @@ p {
   font-weight: normal;
   line-height: 1.4;
   font-size: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
+}
+
+.logo {
+  background: transparent;
+  width:80px;
+  object-fit: contain;
+  border:none;
+}
+
+.pink-bg-container{
+  background: var(--secondary-color);
+  padding: 14px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap:15px;
+}
+
+.into-text {
+  flex-direction: column;
+  display: flex;
+  align-items: left;
+  gap:8px;
+  flex-wrap: nowrap;
+}
+
+.into-text .btn-arrow {
+  display: inline-flex;
+  align-items: center;
 }
 
 .resume-card {
-  background: white;
+  background-color: white;
   padding: 40px;
   border-radius: 20px; 
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  flex:1;
+  margin-right: 10px;
 }
 
 .resume-card p {
@@ -93,7 +127,6 @@ p {
   }
 
 .btn-resume {
-  color: #f696bc;
   transition: background 0.3s ease;
 }
 
@@ -120,7 +153,6 @@ p {
 .content h3 {
   font-size: 24px;
   line-height: 1.5;
-
   font-family: var(--default-font-family);
 }
 
@@ -247,5 +279,11 @@ footer .social-links a:hover {
   .project-desciption {
     padding: 0;
     text-align: center;
+  }
+  .resume-card {
+    display: none;
+  }
+  .pink-bg-container {
+  background-color: white;
   }
 }
